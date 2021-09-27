@@ -1,0 +1,161 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  /* background-color: #e5e5e5; */
+  background: linear-gradient(
+    113.86deg,
+    rgba(0, 255, 199, 0.5) 0%,
+    rgba(255, 1, 169, 0) 100%
+  );
+  font-family: "Poppins", sans-serif;
+  color: #040d21;
+}
+
+a {
+  color: #040d21;
+}
+
+.bg-items {
+  position: absolute;
+  z-index: -3;
+}
+
+#top-left {
+  top: 0;
+  left: 0;
+}
+
+#bottom-right {
+  bottom: 0;
+  right: 0;
+}
+
+#top-right {
+  top: 0;
+  right: 0;
+}
+
+#bottom-left {
+  bottom: 0;
+  left: 0;
+}
+
+#center {
+  left: 50%;
+  margin-left: -50px;
+  top: 50%;
+  margin-top: -50px;
+}
+
+.btn-default,
+.btn-info {
+  background: linear-gradient(
+    113.86deg,
+    rgba(0, 255, 199, 0.5) 0%,
+    rgba(255, 1, 169, 0) 100%
+  );
+  color: #040d21;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background: linear-gradient(
+    113.86deg,
+    rgba(0, 255, 199, 0.5) 0%,
+    rgba(255, 1, 169, 0) 100%
+  );
+  color: #040d21;
+}
+
+#carded {
+  color: #040d21;
+  border-radius: 6px;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+  background-color: white;
+  color: #040d21;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  background-color: #040d21;
+  color: #fffff0;
+  border-radius: 10px 10px 0px 0px !important;
+}
+
+.card-body {
+  margin-bottom: 50px;
+  background-color: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(5px);
+  border-radius: 0px 0px 10px 10px !important;
+}
+
+#postform {
+  color: #040d21;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+  margin-top: 3%;
+  padding: 3%;
+  border-radius: 8px;
+  z-index: 1;
+}
+
+.form-control,
+.form-control:focus {
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+  color: #040d21;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.form-control:focus {
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.card,
+.navbar,
+.pagination .page-item.active .page-link {
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+#posts {
+  color: rgb(255, 255, 255);
+  font-weight: bolder;
+  text-transform: uppercase;
+  margin-top: 2%;
+  font-size: 40px;
+  font-family: "Poppins", sans-serif;
+}
+
+.impressions {
+  border-bottom: 1px solid rgba(255, 133, 110, 0.25);
+}
+
+#imgform {
+  display: none;
+}
+
+.blog-content {
+  display: flex;
+  /* justify-content: center;
+  align-items: center; */
+}
+
+.nav {
+  flex-direction: column;
+  align-items: flex-start;
+  border-right: 1px solid #040d21;
+}
+
+.tabbed-content {
+  flex: 1;
+}
+
+.nav-justified .nav-item {
+  display: contents;
+}

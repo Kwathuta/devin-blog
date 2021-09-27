@@ -1,16 +1,16 @@
-<nav class="mb-1 navbar navbar-expand-lg navbar-dark">
-    <a class="navbar-brand" href="{{url_for('main.index')}}"><strong>60 Seconds Impressions</strong> </a>
+<nav class="mb-1 navbar navbar-expand-lg">
+    <a class="navbar-brand" href="{{url_for('main.index')}}"><strong>Devin Blogs</strong> </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4"aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                  <a class="nav-link" href="{{url_for('main.index')}}">All Impressions</a>
+                  <a class="nav-link" href="{{url_for('main.index')}}">All Blogs</a>
                 </li>
                 {% if current_user.is_authenticated %}
                 <li class="nav-item">
-                    <a class="nav-link" href="{{url_for('main.new_impression')}}">New Impression</a>
+                    <a class="nav-link" href="{{url_for('main.new_blog')}}">New Blog</a>
                 </li>
                 {% endif %}
             </ul>
