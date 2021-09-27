@@ -122,6 +122,18 @@ class Dislike(db.Model):
         return f"{self.user_id}:{self.blog_id}"
 
 
+class Quote:
+    """
+    Qoute class to define the quote object
+    """
+
+    def __init__(self, author, id, quote, permalink):
+        self.author = author
+        self.id = id
+        self.quote = quote
+        self.permalink = permalink
+
+
 @login_manager.user_loader
 def load_user(user_id):
     return User.query.get(user_id)
