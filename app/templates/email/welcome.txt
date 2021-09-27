@@ -1,0 +1,5 @@
+Hello {{user.username}},
+
+We are pleased to have you here at Devin Blog!
+
+Feel free to browse and post new content! Cheers!
