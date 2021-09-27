@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "d46582e91990b2d756c716e359a958af85ee1eaed1564461afd195486488d864"
+            "sha256": "795b1a120d6a15d8c5f84d4ca31a7daaabdcda826b8fbdb7f5796bb38f4e4891"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -38,6 +38,14 @@
             "markers": "python_version >= '3.6'",
             "version": "==8.0.1"
         },
+        "dnspython": {
+            "hashes": [
+                "sha256:95d12f6ef0317118d2a1a6fc49aac65ffec7eb8087474158f42f26a639135216",
+                "sha256:e4a87f0b573201a0f3727fa18a516b055fd1107e0e5477cded4a2de497df1dd4"
+            ],
+            "markers": "python_version >= '3.6'",
+            "version": "==2.1.0"
+        },
         "dominate": {
             "hashes": [
                 "sha256:76ec2cde23700a6fc4fee098168b9dee43b99c2f1dd0ca6a711f683e8eb7e1e4",
@@ -45,6 +53,13 @@
             ],
             "markers": "python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3'",
             "version": "==2.6.0"
+        },
+        "email-validator": {
+            "hashes": [
+                "sha256:5675c8ceb7106a37e40e2698a57c056756bf3f272cfa8682a4f87ebd95d8440b",
+                "sha256:aa237a65f6f4da067119b7df3f13e89c25c051327b2b5b66dc075f33d62480d7"
+            ],
+            "version": "==1.1.3"
         },
         "flask": {
             "hashes": [
@@ -177,6 +192,14 @@
             ],
             "index": "pypi",
             "version": "==20.1.0"
+        },
+        "idna": {
+            "hashes": [
+                "sha256:14475042e284991034cb48e06f6851428fb14c4dc953acd9be9a5e95c7b6dd7a",
+                "sha256:467fbad99067910785144ce333826c71fb0e63a425657295239737f7ecd125f3"
+            ],
+            "markers": "python_version >= '3.5'",
+            "version": "==3.2"
         },
         "importlib-resources": {
             "hashes": [
@@ -356,11 +379,14 @@
             "version": "==0.16.0"
         },
         "wtforms": {
+            "extras": [
+                "email"
+            ],
             "hashes": [
                 "sha256:7ee6e0591777e4ad6779276cd64464bd0a8fc1ce2509b5bb88f936c9426c180c",
                 "sha256:cf01f0173ff7124ab30afeee444876a0f576fa5ed9c32f2112c439137077492f"
             ],
-            "markers": "python_version >= '3.6'",
+            "index": "pypi",
             "version": "==3.0.0a1"
         },
         "zipp": {
