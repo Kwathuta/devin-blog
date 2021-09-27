@@ -9,15 +9,15 @@ from .. import db, photos
 @main.route("/")
 def index():
     blogs = Blog.query.all()
-    interviews = Blog.query.filter_by(category="Interview").all()
-    social = Blog.query.filter_by(category="Social").all()
-    promotion = Blog.query.filter_by(category="Promotion").all()
+    lifestyle = Blog.query.filter_by(category="Lifestyle").all()
+    fitness = Blog.query.filter_by(category="Fitness").all()
+    diy = Blog.query.filter_by(category="DIY").all()
     return render_template(
         "index.html",
         blogs=blogs,
-        interviews=interviews,
-        social=social,
-        promotion=promotion,
+        lifestyle=lifestyle,
+        fitness=fitness,
+        diy=diy,
     )
 
 

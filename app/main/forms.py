@@ -17,7 +17,7 @@ class BlogForm(FlaskForm):
         choices=[
             ("Lifestyle", "Lifestyle"),
             ("Fitness", "Fitness"),
-            ("Do It Yourself (DIY)", "Do It Yourself(DIY)"),
+            ("DIY", "DIY"),
         ],
         validators=[DataRequired()],
     )
