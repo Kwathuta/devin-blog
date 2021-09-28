@@ -4,6 +4,7 @@ from flask_login import login_required, current_user
 from ..models import User, Blog, Comment, Like, Dislike
 from .forms import UpdateProfile, BlogForm, CommentForm
 from .. import db, photos
+from ..requests import get_quotes
 
 
 @main.route("/")
@@ -12,12 +13,14 @@ def index():
     lifestyle = Blog.query.filter_by(category="Lifestyle").all()
     fitness = Blog.query.filter_by(category="Fitness").all()
     diy = Blog.query.filter_by(category="DIY").all()
+    quotes = get_quotes()
     return render_template(
         "index.html",
         blogs=blogs,
         lifestyle=lifestyle,
         fitness=fitness,
         diy=diy,
+        quotes=quotes,
     )
 
 

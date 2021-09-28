@@ -159,3 +159,7 @@ a {
 .nav-justified .nav-item {
   display: contents;
 }
+
+.quote-content {
+  flex: 0.25;
+}

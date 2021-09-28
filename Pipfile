@@ -17,6 +17,8 @@ flask-wtf = "*"
 gunicorn = "*"
 psycopg2-binary = "*"
 wtforms = {extras = ["email"], version = "*"}
+flask-restful = "*"
+requests = "*"
 
 [dev-packages]
 black = "*"
